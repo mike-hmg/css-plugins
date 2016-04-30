@@ -1,0 +1,121 @@
+* { 
+  -webkit-backface-visibility: hidden; 
+}
+
+.row {
+  height:70px;
+  padding:30px 0;
+  text-align:center;
+  .btn {
+    // define the button depth here, which will be used for box shadow and margins
+    @btn-depth : 3px;
+    
+    border-radius:5px;
+    color:#FFF;
+    display:inline-block;
+    font-family:Arial, sans-serif;
+    font-size:24px;
+    font-weight:bold;
+    margin:0px auto;
+    min-width:75px;
+    padding:20px 50px;
+    position:relative;
+    text-decoration:none;
+    -webkit-transition:background 0.4s ease-in-out;
+    
+    &.red {
+      @red : #e04e3e;
+      background:@red;
+      box-shadow:0px @btn-depth 0px darken(@red, 15%);
+      &:hover {
+        background:lighten(@red, 3%);
+      }
+    }
+    
+    &.grey {
+      @grey : #3a3f48;
+      background:@grey;
+      box-shadow:0px @btn-depth 0px darken(@grey, 15%);
+      &:hover {
+        background:lighten(@grey, 3%);
+      }
+    }
+    
+    &.green {
+      @green : #9ddd43;
+      background:@green;
+      box-shadow:0px @btn-depth 0px darken(@green, 15%);
+      &:hover {
+        background:lighten(@green, 3%);
+      }
+    }
+    
+    &.blue {
+      @blue : #2D86F9;
+      background:@blue;
+      box-shadow:0px @btn-depth 0px darken(@blue, 15%);
+      &:hover {
+        background:lighten(@blue, 3%);
+      }
+    }
+    
+    &.facebook {
+      @facebook : #3e5a92;
+      background:@facebook;
+      box-shadow:0px @btn-depth 0px darken(@facebook, 15%);
+      &:hover {
+        background:lighten(@facebook, 3%);
+      }
+    }
+    
+    &.twitter {
+      @twitter : #31a6d8;
+      background:@twitter;
+      box-shadow:0px @btn-depth 0px darken(@twitter, 15%);
+      &:hover {
+        background:lighten(@twitter, 3%);
+      }
+    }
+    
+    &.tumblr {
+      @tumblr : #2C4762;
+      background:@tumblr;
+      box-shadow:0px @btn-depth 0px darken(@tumblr, 15%);
+      &:hover {
+        background:lighten(@tumblr, 3%);
+      }
+    }
+    
+    &.flickr {
+      @flickr : #FF0084;
+      background:@flickr;
+      box-shadow:0px @btn-depth 0px darken(@flickr, 15%);
+      &:hover {
+        background:lighten(@flickr, 3%);
+      }
+    }
+    
+    &.googleplus {
+      @googleplus : #DD4B39;
+      background:@googleplus;
+      box-shadow:0px @btn-depth 0px darken(@googleplus, 15%);
+      &:hover {
+        background:lighten(@googleplus, 3%);
+      }
+    }
+    
+    &.pinterest {
+      @pinterest : #CB2027;
+      background:@pinterest;
+      box-shadow:0px @btn-depth 0px darken(@pinterest, 15%);
+      &:hover {
+        background:lighten(@pinterest, 3%);
+      }
+    }
+    
+    &:active {
+      box-shadow:none;
+      margin:@btn-depth 0 -@btn-depth; 
+    } 
+  }
+}
